@@ -18,3 +18,14 @@ h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
 }
+
+body {
+  background: url('/assets/crossword.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar.navbar-inverse {
+  background:url('/assets/emb.png');
+  border-right: 0;
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
