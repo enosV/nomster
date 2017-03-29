@@ -66,6 +66,7 @@
   </button>
 </div>
 
+
     <div class="pull-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -73,6 +74,15 @@
     <% end %>
   </div>
 </div>
+
+<% @place.photos.each do |photo| %>
+<div class="col-xs-12 col-sm-6">
+
+      <%= photo.caption %>
+      <%= image_tag photo.picture %>
+
+</div>
+<% end %>
 
 <div class="clear"></div>
 
